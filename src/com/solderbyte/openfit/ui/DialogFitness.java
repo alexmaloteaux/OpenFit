@@ -55,17 +55,8 @@ public class DialogFitness extends DialogFragment {
                 Log.d(LOG_TAG, "Clicked: " + index);
             }
         });
-        builder.setNegativeButton(R.string.dialog_close_fitness,  new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.dialog_close_fitness,  new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int index) {}
-        });
-        builder.setPositiveButton(R.string.dialog_sync_fitness,  new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int index) {
-                Log.d(LOG_TAG, "Sync clicked");
-                Intent msg = new Intent(OpenFitIntent.INTENT_GOOGLE_FIT);
-                msg.putExtra(OpenFitIntent.INTENT_EXTRA_MSG, OpenFitIntent.INTENT_GOOGLE_FIT_SYNC);
-                msg.putExtra(OpenFitIntent.INTENT_EXTRA_DATA, true);
-                getActivity().sendBroadcast(msg);
-            }
         });
         dialog = builder.create();
 

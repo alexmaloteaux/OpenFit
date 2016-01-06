@@ -19,11 +19,6 @@
         go to bluetooth settings, and remove the Gear Fit from the list of paired devices,
         then scan and pair to the Gear Fit via the Open Fit app. 
         \n<b>Note:</b> You may need to reset the Gear Fit.
-        \n\n<b>How to Sync with Goolge Fit:</b>
-        \n\t◦ Enable Google Fit Sync
-        \n\t◦ Request Fitness Data
-        \n\t◦ Wait for the Fitness dialog
-        \n\t◦ Press the Sync button
         \n\n<b>Contributing:</b>
         \nTo contribute please visit the official XDA forum at:
         \nhttp://goo.gl/y2Fkmt
@@ -41,7 +36,6 @@
         \n\t◦ Notification + Clock
         \n• Removed App Filtering
         \n\nFixed bug, sorry. Please reselect a weather update
-        \n\nGoogle Fit Sync trail extended to Jan 31, 2016.
     </string>
     <string name="dialog_close_news">Close</string>
     <string name="dialog_title_notification_access">Notification Access</string>
@@ -77,9 +71,6 @@
     <string name="preference_fitness_title">Fitness</string>
     <string name="preference_fitness_dialog">Fitness</string>
     <string name="preference_fitness_summary">Request Fitness Data</string>
-    <string name="preference_checkbox_googlefit_title">Google Fit Sync</string>
-    <string name="preference_checkbox_googlefit_on">Sync Enabled</string>
-    <string name="preference_checkbox_googlefit_off">Sync Disabled</string>
     <string name="preference_category_apps_title">Applications</string>
     <string name="preference_donate_title">Donate</string>
     <string name="preference_donate_summary">Make a donation via PayPal</string>
@@ -95,16 +86,10 @@
     <string name="toast_bluetooth_disconnected">Gear Fit disconnected</string>
     <string name="toast_bluetooth_connect_failed">Gear Fit connect failed</string>
     <string name="toast_bluetooth_devices_failed">Gear Fit connect failed</string>
-    <string name="toast_google_fit_connect">Connecting to Google Fit</string>
-    <string name="toast_google_fit_disconnect">Disconnecting To Google Fit</string>
-    <string name="toast_google_fit_sync">Syncing to Google Fit&#8230;</string>
-    <string name="toast_google_fit_sync_success">Sync complete</string>
-    <string name="toast_google_fit_sync_failure">Sync failed</string>
     <string name="notification_title">Open Fit</string>
     <string name="notification_connected">Connected to Gear Fit</string>
     <string name="notification_disconnected">Disconnected to Gear Fit</string>
     <string name="notification_button_connect">Connect</string>
     <string name="notification_button_disconnect">Disconnect</string>
     <string name="notification_button_close">Shut Down</string>
-    <string name="progress_dialog_syncing">Syncing to Google Fit.\nPlease allow up to 5 minutes</string>
 </resources>
