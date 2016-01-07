@@ -72,6 +72,7 @@
     <string name="preference_fitness_dialog">Fitness</string>
     <string name="preference_fitness_summary">Request Fitness Data</string>
     <string name="preference_category_apps_title">Applications</string>
+    <string name="preference_category_misc_title">Miscellaneous</string>
     <string name="preference_donate_title">Donate</string>
     <string name="preference_donate_summary">Make a donation via PayPal</string>
     <string name="preference_applications_summary">No applications added. Click the + icon at the top menu to add an application. Make sure Notification Access is Enabled, otherwise notifcations will not work.</string>
