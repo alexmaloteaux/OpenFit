@@ -99,7 +99,6 @@ public class OpenFitActivity extends Activity {
         private static final String LOG_TAG = "OpenFit:OpenFitFragment";
 
         private OpenFitSavedPreferences oPrefs;
-        private ProgressDialog progressDailog = null;
 
         // UI preferences
         private static SwitchPreference preference_switch_bluetooth;
