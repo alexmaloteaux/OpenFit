@@ -141,6 +141,7 @@ public class OpenFitActivity extends Activity {
         private static Preference preference_scan;
         private static Preference preference_fitness;
         private static Preference preference_donate;
+        private static Preference preference_changelog;
         
 
         @Override
@@ -157,15 +158,9 @@ public class OpenFitActivity extends Activity {
             // setup UI
             this.setupUIListeners();
 
-            // load news
-            DialogNews d = new DialogNews();
-            d.show(getFragmentManager(), getString(R.string.dialog_title_news));
-
             // check notification access
             this.checkNotificationAccess();
 
-            // start google fit
-            this.restoreGoogleFit();
 
             // start service
             Intent serviceIntent = new Intent(this.getActivity(), OpenFitService.class);
@@ -362,6 +357,17 @@ public class OpenFitActivity extends Activity {
                     Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=2PLHGNYFEUYK8&lc=US&item_name=Open%20Fit%20Donations&item_number=Open%20Fit%20Donation&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted"));
                     //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.paypal.me/jareddlc"));
                     startActivity(browserIntent);
+                    return true;
+                }
+            });
+
+            preference_changelog = (Preference) getPreferenceManager().findPreference("preference_changelog");
+            preference_changelog.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+                @Override
+                public boolean onPreferenceClick(Preference preference) {
+                    // load news
+                    DialogNews d = new DialogNews();
+                    d.show(getFragmentManager(), getString(R.string.dialog_title_news));
                     return true;
                 }
             });

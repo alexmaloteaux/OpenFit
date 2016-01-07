@@ -84,6 +84,8 @@
     <string name="preference_category_misc_title">Miscellaneous</string>
     <string name="preference_donate_title">Donate</string>
     <string name="preference_donate_summary">Make a donation via PayPal</string>
+    <string name="preference_changelog_title">Changelog</string>
+    <string name="preference_changelog_summary">Display changelog</string>
     <string name="preference_applications_summary">No applications added. Click the + icon at the top menu to add an application. Make sure Notification Access is Enabled, otherwise notifcations will not work.</string>
     <string name="toast_bluetooth_enable">Enabling&#8230;</string>
     <string name="toast_bluetooth_scan">Scanning&#8230;</string>
