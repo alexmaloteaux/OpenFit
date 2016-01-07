@@ -74,6 +74,11 @@
         android:title="@string/preference_category_apps_title"
         android:key="preference_category_apps">
     </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="@string/preference_category_misc_title"
+        android:key="preference_category_misc">
+    </PreferenceCategory>
 
     <Preference
         android:key="preference_donate"
