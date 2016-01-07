@@ -74,6 +74,10 @@
     </PreferenceCategory>
 
     <Preference
+        android:key="preference_changelog"
+        android:title="@string/preference_changelog_title"
+        android:summary="@string/preference_changelog_summary"/>
+    <Preference
         android:key="preference_donate"
         android:icon="@drawable/open_donate"
         android:title="@string/preference_donate_title"
